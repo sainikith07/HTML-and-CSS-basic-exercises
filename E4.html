@@ -1,0 +1,66 @@
+<!--  Subscribe, Join, and Tweet Buttons -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        /* Button container layout */
+        .buttons-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            gap: 1rem;
+        }
+        
+        /* Subscribe button styling */
+        .button-subscribe{
+            color: white; 
+            border: none;
+            background-color: rgb(204, 0, 0);
+            border-radius: 2px;
+            padding: 0.5rem 1rem;
+        }
+        .button-subscribe:hover{
+            opacity: 0.6;
+            transition: 0.3s ease-in-out;
+        }
+        
+        /* Join button styling */
+        .button-join{
+            color: rgb(6,95,212);
+            border: 1px solid rgb(6,95,212);
+            background-color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2px;
+        }
+        .button-join:hover{
+            color: white;
+            background-color: rgb(6,95,212);
+            transition: 0.3s ease-in-out;
+        }
+        
+        /* Tweet button styling */
+        .button-tweet{
+            background-color: rgb(29,155,240);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 40rem;
+            transition: box-shadow 0.15s;
+        }
+        .button-tweet:hover{
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons-div">
+        <button class="button-subscribe">SUBSCRIBE</button>
+        <button class="button-join">JOIN</button>
+        <button class="button-tweet">Tweet</button>
+    </div>
+</body>
+</html>

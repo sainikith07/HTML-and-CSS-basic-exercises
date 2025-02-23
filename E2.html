@@ -1,0 +1,100 @@
+<!--  Button Styling and Layout -->
+<head>
+    <title>Excercise 2</title>
+    <style>
+        /* Container styling with margins */
+        .container{
+            margin: 13rem;
+            margin-left: 20rem;
+        }
+        
+        /* General button styling */
+        .button{
+            cursor: pointer;
+            border: none;
+            padding: 8px 10px;
+            text-align: center;
+        }
+        
+        /* Button container layout */
+        .buttons-div{
+            margin-left: 4rem;
+            display: flex; 
+            justify-content: left;  
+            flex-direction: row;
+            gap: 4rem;
+        }
+        
+        /* Individual button styles */
+        .button-request-now{
+            color: white; 
+            background-color: black;
+        }
+        .button-addtocart{
+            background-color: rgb(255, 216, 20); 
+            color: black; 
+            border-radius: 4rem; 
+            padding: 8px 50px;
+            font-weight: bold;
+        }
+        .button-signup{
+            background-color: rgb(46, 164, 79); 
+            color: white;
+            padding: 8px 20px;  
+            border-radius: 5px; 
+            font-weight: bold;
+        }
+        .button-getstarted{
+            color: white; 
+            background-color: rgb(121, 82,179); 
+            border: none; 
+            padding: 8px 20px;
+            border-radius: 5px; 
+            font-weight: bold;
+        }
+        .button-download{
+            color: rgb(108, 117, 125); 
+            padding: 8px 20px;
+            background-color: white; 
+            border-radius: 5px;
+            border: 1px solid rgb(108, 117, 125);
+        }
+        .button-apply{
+            background-color: rgb(10, 102, 194);
+            font-weight: bold;
+            color: white;
+            padding: 8px 20px; 
+            border-radius: 40rem;
+        }
+        .button-apply-save{
+            color: rgb(10, 102, 194);
+            font-weight: bold;
+            background-color: white;
+            border: 1px solid rgb(10, 102, 194);
+            border-radius: 4rem;
+            padding: 8px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- First row of buttons -->
+        <div class="buttons-div">
+            <button class="button-request-now button">Request now</button>
+            <button class="button-addtocart button">Add to Cart</button>
+            <button class="button-signup button">Sign up</button>    
+        </div>
+        
+        <!-- Second row of buttons -->
+        <div style="display: flex; flex-direction: row; gap: 5rem;">
+            <div style="margin-top:50px; display: flex; gap:1rem;">
+                <button class="button-getstarted button">Get started</button>
+                <button class="button-download">Download</button>
+            </div>
+            <div style="margin-top:50px; display: flex; gap:1rem;">
+                <button class="button-apply button">Apply on Company website</button>
+                <button class="button-apply-save">Save</button>
+            </div>
+        </div>
+    </div>
+</body>
